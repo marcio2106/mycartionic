@@ -1,0 +1,66 @@
+
+
+<ion-header>
+    <ion-toolbar class="new-background-color">
+      <ion-title>Agendamento</ion-title>
+      <ion-buttons slot="primary">
+        <ion-back-button text="Back" icon="" color="tertiary" fill="outline"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+  <ion-segment color="danger" scrollable>
+    <ion-segment-button layout="icon-end">
+      <ion-icon name="pin"></ion-icon>
+      <ion-label>Niterói</ion-label>
+    </ion-segment-button>
+    <ion-segment-button layout="icon-end">
+      <ion-icon name="pin"></ion-icon>
+      <ion-label>São Gonçalo</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <ion-list>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Escolha o Horario</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>12:00 - 14:00</ion-label>
+        <ion-radio slot="end" color="danger" checked></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>10:00 - 12:00</ion-label>
+        <ion-radio slot="end" color="danger"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>12:00 - 14:00</ion-label>
+        <ion-radio slot="end" color="danger"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>14:00 - 16:00</ion-label>
+        <ion-radio slot="end" color="danger"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>16:00 - 18:00</ion-label>
+        <ion-radio slot="end" color="danger"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>18:00 - 20:00</ion-label>
+        <ion-radio slot="end" color="danger"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+  </ion-list>
+  <div class="botao">
+    <ion-button (click)="agendamento()"  expand="block" color="danger">Agendar</ion-button>
+  </div>
+</ion-content>

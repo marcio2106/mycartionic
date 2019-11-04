@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>Welcome {{username}}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button color="danger" fill="outline" (click)="prosesLogout()">
+        <ion-icon slot="end" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="centro">
+
+  <img class="avatar" src="assets\8dicas1.jpg">
+
+  <h5>Carlos<ion-icon name="star-outline"></ion-icon>4,7</h5>
+
+  <p>Honda Civic / ABC - 1234</p>
+
+  <ion-list>
+    <ion-list-header>Ganhos Nesta Semana</ion-list-header>
+    <ion-reorder-group id="reorder">
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="col-border">
+              <ion-label>
+                <h1>Entregas</h1>
+                <h2>7 <ion-icon name="arrow-forward" routerLink="/pagentrega"></ion-icon>
+                </h2>
+
+              </ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-label>
+                <h1>Saldo</h1>
+                <h2>R$70,00 <ion-icon name="arrow-forward" routerLink="/pagsaldo"></ion-icon>
+                </h2>
+
+              </ion-label>
+            </ion-col>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+
+
+</ion-content>
